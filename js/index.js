@@ -49,7 +49,7 @@ $(".btn").click(function () {
     else{
         // console.log("Game over");
 
-        $("h1").text("Game Over, Press Any key To Restart,  your score is- " + gameLevel);
+        $("h1").text("Game Over, Press Any key To Restart,  your score is- " + (gameLevel - 1));
         $("body").addClass("game-over");
 
         playSound("wrong");
